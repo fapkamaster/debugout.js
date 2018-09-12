@@ -13,7 +13,7 @@ function debugout() {
 	self.useLocalStorage = false; // store the output using window.localStorage() and continuously add to the same log each session
 	self.recordLogs = true; // set to false after you're done debugging to avoid the log eating up memory
 	self.autoTrim = true; // to avoid the log eating up potentially endless memory
-	self.maxLines = 10000; // if autoTrim is true, this many most recent lines are saved
+	self.maxLines = 15000; // if autoTrim is true, this many most recent lines are saved
 	self.tailNumLines = 1000; // how many lines tail() will retrieve
 	self.logFilename = 'uidgrabber2.txt'; // filename of log downloaded with downloadLog()
 	self.maxDepth = 25; // max recursion depth for logged objects
